@@ -1,0 +1,5 @@
+*.jpeg
+ad.xlsx
+node_modules
+tokens
+.env
