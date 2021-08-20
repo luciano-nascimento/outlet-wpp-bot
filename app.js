@@ -59,9 +59,3 @@ function sleep(ms) {
 function getCurrentDateTime(){
     return new Date().toLocaleString()
 }
-
-
-
-
-
-// "Lançamento✨" +"\r\n\r\n"+ "🌵Brinco Folheado de"

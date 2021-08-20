@@ -2,19 +2,16 @@
 I created this app to help my GF to send ads to wpp groups, basically send limited ads in sequence with some interval.
 <br/>
 <br/>
-<br/>
 
 # How it work ?
 Each line in xlsx file is a ad, so just add name, image name, and text, it will send a image to wpp with a caption.
 It uses your account, so will be necessary load the qr code in your acc.
 <br/>
 <br/>
-<br/>
 
 # Configuration
 define your ads in ad.example.xlsx and rename ad.example.xlsx to ad.xlsx
 * define the group name and interval(in seconds) inside .env.example and rename .env.example to .env
-<br/>
 <br/>
 <br/>
 
@@ -34,7 +31,6 @@ node app.js
 ```
 * load the qr code from your wpp account
 * it will load de xlsx and send the ads
-<br/>
 <br/>
 <br/>
 
