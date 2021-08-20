@@ -10,7 +10,7 @@ It uses your account, so will be necessary load the qr code in your acc.
 <br/>
 
 # Configuration
-define your ads in ad.example.xlsx and rename ad.example.xlsx to ad.xlsx
+*define your ads in ad.example.xlsx and rename ad.example.xlsx to ad.xlsx
 * define the group name and interval(in seconds) inside .env.example and rename .env.example to .env
 <br/>
 <br/>
