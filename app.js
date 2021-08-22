@@ -3,6 +3,7 @@ const venom = require('venom-bot');
 const xlsxFile = require('read-excel-file/node');
 const delayTime = process.env.INTERVAL
 const groupName = process.env.GROUP_NAME
+var firstAd = true
 
 console.log(`[${getCurrentDateTime()}] Starting...`)
 console.log(`[${getCurrentDateTime()}] Group name defined : ${groupName}`)
@@ -33,8 +34,11 @@ const run = async (client, group) => {
             const imagePath = row[1]
             const caption = row[2]
             if(row[0] !== "AD"){
+                if(!firstAd){
+                    await sleep(delayTime)
+                }
                 await sendImage(client, groupId, imagePath, imagePath, caption, adName)
-                await sleep(delayTime)        
+                firstAd = false;        
             }
         }
     })
